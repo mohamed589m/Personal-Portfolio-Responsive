@@ -8,7 +8,11 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "FrontEnd Designer", "BackEnd Designer"];
+  const toRotate = [
+    "Full Stack Developer",
+    "FrontEnd Developer",
+    "BackEnd Developer",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -60,17 +64,18 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi I'm Mohamed `}
+                    {`Hi I'm Mohamed Tamer `}
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
-                    eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                    consequatur.
+                    I'm a passionate Full Stack Developer with expertise in both
+                    Frontend and Backend development. I create modern,
+                    responsive, and user-friendly web applications using the
+                    latest technologies. My goal is to deliver high-quality
+                    solutions that combine clean code, seamless performance, and
+                    great user experience.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={() => window.location.href="#connect"}>
                     Let's connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

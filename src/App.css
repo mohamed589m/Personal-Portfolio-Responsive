@@ -319,7 +319,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
-.skill {
+/* .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -356,6 +356,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+} */
+
+.skills {
+  /* padding: 50px; */
+  text-align: center;
+  background-image: url("../src/assets/img/color-sharp.png");
+  background-repeat: no-repeat;
+}
+
+.skills .skill-box {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 65px;
+  margin-top: -120px;
+}
+
+.skills .skill-box .section-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.skills .skill-box .section-p {
+  font-size: 20px;
+  color: #b8b8b8;
+  margin: 15px 0 80px 0;
+}
+
+.skill-icon {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain; /* Ensures SVGs scale proportionally */
 }
 
 /************ Projects Css ************/
@@ -380,14 +411,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -488,7 +519,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 60px 0 60px 0;
 }
 .contact img {
   width: 92%;
@@ -564,7 +595,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 70px 0 70px 0;
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
@@ -640,4 +671,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.footer .logo {
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 5px;
 }
